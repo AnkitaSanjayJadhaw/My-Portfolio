@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Development Projects | SJ Tech Studio</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="stylesheet"
+          href="projects.css">
+
+</head>
+<body>
+
+    <!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="nav-main">
+    <a href="index.html" class="logo">
+
+        <img src="SJ-logo.png"
+             class="logo-img"
+             alt="SJ Tech Studio">
+
+        <h1>
+            SJ <span>Tech Studio</span>
+        </h1>
+    </a>
+
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="Projects-showcase.html">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="web-projects.html"
+                   class="active">
+                    Web
+                </a>
+            </li>
+
+            <li>
+                <a href="creative-projects.html">
+                    Creative
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <button class="hamburger"
+            id="hamburger">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+</header>
+
+<!-- =====================================================
+     PAGE HEADER
+===================================================== -->
+
+<section class="project-list-hero web-hero">
+    <span>
+        SJ TECH STUDIO
+    </span>
+
+    <h1>
+        Web Development Projects
+    </h1>
+
+    <p>
+        Websites and applications built with modern
+        web technologies and responsive design principles.
+    </p>
+</section>
+
+<!-- =====================================================
+     FILTER
+===================================================== -->
+
+<section class="web-projects-section">
+
+    <div class="project-filter">
+        <button class="filter-btn active"
+                data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn"
+                data-filter="frontend">
+            Frontend
+        </button>
+
+        <button class="filter-btn"
+                data-filter="php">
+            PHP
+        </button>
+
+        <button class="filter-btn"
+                data-filter="laravel">
+            Laravel
+        </button>
+
+        <button class="filter-btn"
+                data-filter="ecommerce">
+            E-Commerce
+        </button>
+    </div>
+
+    <!-- =====================================================
+     WEB PROJECTS
+ ===================================================== -->
+
+    <div class="web-project-grid">
+
+        <!-- PORTFOLIO -->
+
+        <article class="web-project-card"
+                 data-category="frontend"
+                 data-aos="fade-up">
+
+            <div class="web-project-image">
+
+                <img src="updated portfolio.png"
+                     alt="Personal Portfolio Website">
+
+                <div class="project-overlay">
+
+                    <span>
+                        Frontend
+                    </span>
+                </div>
+            </div>
+
+            <div class="web-project-content">
+
+                <span class="project-number">
+                    01 / WEB
+                </span>
+
+                <h2>
+                    Personal Portfolio Website
+                </h2>
+
+                <p>
+                    A responsive personal portfolio website
+                    created to showcase development,
+                    design skills and professional work.
+                </p>
+
+                <div class="technology-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="project-details.html#portfolio"
+                       class="project-btn primary">
+
+                         View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+        <!-- FINTRACK -->
+
+        <article class="web-project-card"
+                 data-category="php"
+                 data-aos="fade-up">
+
+            <div class="web-project-image">
+
+                <img src="Fintrack main.png"
+                     alt="FinTrack Application">
+
+                <div class="project-overlay">
+                    <span>
+                        Finance App
+                    </span>
+                </div>
+            </div>
+
+            <div class="web-project-content">
+
+                <span class="project-number">
+                    02 / WEB
+                </span>
+
+                <h2>
+                    FinTrack App
+                </h2>
+
+                <p>
+                    A personal finance management application
+                    for tracking income, expenses, savings goals
+                    and spending.
+                </p>
+
+                <div class="technology-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="project-details.html#fintrack"
+                       class="project-btn primary">
+
+                         View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- AMAZON -->
+
+        <article class="web-project-card"
+                 data-category="ecommerce frontend"
+                 data-aos="fade-up">
+
+            <div class="web-project-image">
+
+                <img src="Amazon main.png"
+                     alt="Amazon Clone">
+
+                <div class="project-overlay">
+                    <span>
+                        E-Commerce
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="web-project-content">
+                <span class="project-number">
+                    03 / WEB
+                </span>
+
+                <h2>
+                    Amazon Clone
+                </h2>
+
+                <p>
+                    An e-commerce interface inspired by Amazon,
+                    featuring product listings, navigation
+                    and shopping interface elements.
+                </p>
+
+                <div class="technology-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="project-details.html#amazon"
+                       class="project-btn primary">
+
+                        View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- COVID -->
+
+        <article class="web-project-card"
+                 data-category="laravel php"
+                 data-aos="fade-up">
+
+            <div class="web-project-image">
+
+                <img src="Covid-Care main.png"
+                     alt="COVID Care Website">
+
+                <div class="project-overlay">
+                    <span>
+                        Laravel
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="web-project-content">
+
+                <span class="project-number">
+                    04 / WEB
+                </span>
+
+                <h2>
+                    COVID-Care
+                </h2>
+
+                <p>
+                    A Laravel-based web application created
+                    for COVID testing and vaccination
+                    management.
+                </p>
+
+                <div class="technology-tags">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="project-details.html#covid-care"
+                       class="project-btn primary">
+
+                        View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- REGISTRATION -->
+
+        <article class="web-project-card"
+                 data-category="frontend"
+                 data-aos="fade-up">
+
+            <div class="web-project-image">
+
+                <img src="Registration form main.png"
+                     alt="Registration Form">
+
+                <div class="project-overlay">
+
+                    <span>
+                        Frontend
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="web-project-content">
+
+                <span class="project-number">
+                    05 / WEB
+                </span>
+
+                <h2>
+                    Registration Form
+                </h2>
+
+                <p>
+                    A responsive registration form featuring
+                    structured input fields, validation and
+                    a clean user interface.
+                </p>
+
+                <div class="technology-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="project-details.html#registration"
+                       class="project-btn primary">
+
+                        View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- ALKARAM -->
+
+        <article class="web-project-card"
+                 data-category="ecommerce frontend"
+                 data-aos="fade-up">
+
+            <div class="web-project-image">
+
+                <img src="Alkaram main.png"
+                     alt="Alkaram Clone">
+
+                <div class="project-overlay">
+                    <span>
+                        E-Commerce
+                    </span>
+                </div>
+            </div>
+
+            <div class="web-project-content">
+                <span class="project-number">
+                    06 / WEB
+                </span>
+
+                <h2>
+                    Alkaram Clone
+                </h2>
+
+                <p>
+                    An e-commerce website clone featuring
+                    product presentation, navigation and
+                    shopping interface elements.
+                </p>
+
+                <div class="technology-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-buttons">
+
+                    <a href="project-details.html#alkaram"
+                       class="project-btn primary">
+
+                        View Project
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- =====================================================
+     CTA
+ ===================================================== -->
+
+<section class="project-cta">
+
+    <h2>
+        Looking for a Website?
+    </h2>
+
+    <p>
+        I can help turn your idea into a responsive digital experience.
+    </p>
+
+    <a href="index.html#contact">
+
+        Start a Project
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+</section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 SJ Tech Studio | Ankita Sanjay.
+            All rights reserved.
+        </p>
+
+    </div>
+</footer>
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
