@@ -1,0 +1,221 @@
+/* =====================================================
+   CREATIVE HERO
+===================================================== */
+
+.creative-hero {
+    min-height: 430px;
+    padding: 100px 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #eeeeee;
+}
+
+.creative-hero > span {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #777777;
+}
+
+.creative-hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    margin: 15px 0;
+}
+
+.creative-hero p {
+    max-width: 650px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #777777;
+}
+
+/* =====================================================
+   CREATIVE SECTION
+===================================================== */
+
+.creative-section {
+    padding: 70px 7% 100px;
+}
+
+.creative-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.creative-filter-btn {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    padding: 9px 18px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.creative-filter-btn:hover,
+.creative-filter-btn.active {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+}
+
+/* =====================================================
+   CREATIVE GRID
+===================================================== */
+
+.creative-grid {
+    max-width: 1200px;
+    margin: auto;
+    columns: 3 300px;
+    column-gap: 25px;
+}
+
+.creative-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    break-inside: avoid;
+    transition: 0.35s;
+}
+
+.creative-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.09);
+}
+
+.creative-media {
+    position: relative;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+
+.creative-media img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+
+.creative-card:hover .creative-media img {
+    transform: scale(1.04);
+}
+
+.creative-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #111111;
+    color: #ffffff;
+    padding: 7px 11px;
+    font-size: 9px;
+    letter-spacing: 0.5px;
+}
+
+.video-media {
+    background: #111111;
+}
+
+.video-media video {
+    width: 100%;
+    display: block;
+    max-height: 450px;
+}
+
+.creative-content {
+    padding: 25px;
+}
+
+.creative-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.creative-content p {
+    font-size: 12px;
+    color: #777777;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.creative-content a {
+    color: #111111;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.creative-content a i {
+    margin-left: 6px;
+}
+
+
+/* =====================================================
+    CREATIVE CTA
+===================================================== */
+
+  .creative-cta {
+    padding: 100px 7%;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.creative-cta h2 {
+    font-size: 40px;
+}
+
+.creative-cta p {
+    color: #777777;
+    font-size: 13px;
+    margin: 15px auto 30px;
+}
+
+.creative-cta a {
+    background: #111111;
+    color: #ffffff;
+    padding: 13px 23px;
+    display: inline-flex;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.creative-cta a:hover {
+    color: #ffffff;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .creative-grid {
+        columns: 2 250px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .creative-hero {
+        min-height: 350px;
+        padding: 70px 6%;
+    }
+
+    .creative-hero h1 {
+        font-size: 38px;
+    }
+
+    .creative-section {
+        padding: 60px 6% 80px;
+    }
+
+    .creative-grid {
+        columns: 1;
+    }
+
+}
+
