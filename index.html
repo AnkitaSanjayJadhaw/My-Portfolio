@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SJ Tech Studio by Ankita Sanjay - Web Development, UI/UX Design and Creative Digital Solutions.">
+    <meta name="keywords"
+        content="SJ Tech Studio, Ankita Sanjay, Web Developer, UI UX Designer, Karachi, Web Development">
+    <meta name="author" content="Ankita Sanjay">
+
+     <title>SJ Tech Studio | Ankita Sanjay</title>
+
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="nav-main">
+
+  <!-- LEFT SIDE: LOGO + BRAND -->
+  <div class="logo">
+    <img src="SJ-logo.png" alt="SJ Logo" class="logo-img">
+    <h1>SJ <span>Tech Studio</span></h1>
+  </div>
+
+  <!-- RIGHT SIDE: NAV LINKS -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</div>
+  <!-- HERO SECTION -->
+  <div class="main" id="home">
+    <div class="left">
+      <h3>Welcome to</h3>
+<h1>SJ Tech Studio</h1>
+<h4 style="font-size: 21px; margin-top: 10px;">by Ankita Sanjay</h4>
+<h2 style="font-size: 30px; margin-top: 10px;"><span id="element"></span>
+<h2 style="font-size: 28px; margin-top: 10px;">
+  Building modern web experiences
+</h2>
+<p>
+  I’m Ankita Sanjay, a passionate Web Developer & UI-UX Designer creating
+  modern, responsive and user-friendly digital solutions for businesses and individuals.
+</p>
+ <div class="hero-buttons">
+  <!-- <a href="mailto:ankitasanjay201@gmail.com" class="btn-hire">Hire Me</a> -->
+  <a href="https://www.fiverr.com/sjtech_ankita" target="_blank" class="btn-hire">Hire Me</a>
+  <a href="projects-showcase.html" class="btn-project">Projects</a>
+</div>
+
+    </div>
+    <div class="right" data-aos="fade-up" data-aos-duration="2000">
+      <img src="my pic 4.jpeg"
+        alt="Ankita Sanjay">
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="project" id="projects">
+    <div class="head-section" data-aos="fade-up">
+      <h1>My Projects</h1>
+      <p>Showcasing my best work in web development, design, and creative problem solving.</p>
+    </div>
+
+    <div class="container">
+      <div class="project-cards row gap-3 justify-content-center">
+
+         <!-- 1. Portfolio Website -->
+
+        <div class="card col-12 col-sm-6 col-md-4 col-lg-4" style="width: 18rem;" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-body">
+            <img src="portfolio main.png" class="card-img-top" alt="Portfolio Website">
+            <h5 class="card-title">Personal Portfolio Website</h5>
+            <p class="card-text">A fully responsive portfolio website built with HTML, CSS, JavaScript and Bootstrap showcasing projects and skills.</p>
+            <a href="projects-showcase.html" class="btn" id="btn-cards">Preview</a>
+          </div>
+        </div>
+
+         <!-- 2. Fintrack App -->
+
+        <div class="card col-12 col-sm-6 col-md-4 col-lg-4" style="width: 18rem;" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-body">
+            <img src="Fintrack main.png" class="card-img-top" alt="Weather App">
+            <h5 class="card-title">FinTrack App</h5>
+            <p class="card-text">FinTrack is a client-side personal finance management application that helps you track income, expenses, savings goals, and spending patterns — all in one place.</p>
+            <a href="projects-showcase.html" class="btn" id="btn-cards">Preview</a>
+          </div>
+        </div>
+
+         <!-- 3. Amazon-Clonewebpage -->
+
+        <div class="card col-12 col-sm-6 col-md-4 col-lg-4" style="width: 18rem;" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-body">
+            <img src="Amazon main.png" class="card-img-top" alt="Amazon Clone">
+            <h5 class="card-title">Amazon-Clonewebpage</h5>
+            <p class="card-text">A functional Amazon clone with product listings, cart system, and checkout flow using modern web technologies.</p>
+            <a href="projects-showcase.html" class="btn" id="btn-cards">Preview</a>
+          </div>
+        </div>
+
+        <!-- 4. Covid-Care Website -->
+
+        <div class="card col-12 col-sm-6 col-md-4 col-lg-4" style="width: 18rem;" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-body">
+            <img src="Covid-Care main.png" class="card-img-top" alt="To-Do App">
+            <h5 class="card-title">COVID-Care Website</h5>
+            <p class="card-text">Take control of COVID testing and vaccination management with web application built using Laravel.</p>
+            <a href="projects-showcase.html" class="btn" id="btn-cards">Preview</a>
+          </div>
+        </div>
+
+
+         <!-- 5. Registration Form -->
+
+        <div class="card col-12 col-sm-6 col-md-4 col-lg-4" style="width: 18rem;" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-body">
+            <img src="Registration form main.png" class="card-img-top" alt="Registration Form">
+            <h5 class="card-title">Registration Form</h5>
+            <p class="card-text">A beautifully designed registration form with validation, responsive layout and smooth user experience.</p>
+            <a href="projects-showcase.html" class="btn" id="btn-cards">Preview</a>
+          </div>
+        </div>
+
+
+        <!-- 6. Alkaram Clone -->
+
+        <div class="card col-12 col-sm-6 col-md-4 col-lg-4" style="width: 18rem;" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-body">
+            <img src="Alkaram main.png" class="card-img-top" alt="E-Commerce">
+            <h5 class="card-title">Alkaram-Clone</h5>
+            <p class="card-text">A functional Alkaram clone with product listings, cart system, and checkout flow using modern web technologies.</p>
+            <a href="projects-showcase.html" class="btn" id="btn-cards">Preview</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="view-all-wrapper">
+  <a href="projects-showcase.html" class="view-all-link">
+    View All Projects in Detail
+    <i class="fa-solid fa-arrow-right"></i>
+  </a>
+</div>
+
+  <!-- SERVICES -->
+  <div class="services" id="services">
+    <div class="head-section" data-aos="fade-up">
+      <h1>Services at SJ Tech Studio</h1>
+      <p>Offering comprehensive digital solutions tailored to your needs, from design to deployment.</p>
+    </div>
+
+    <div class="services-card row gap-3 justify-content-center px-3">
+
+      <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem; background-color: #000; color: white;"
+        data-aos="fade-up" data-aos-delay="100">
+        <div class="card-body">
+          <i class="fa-solid fa-code ser-icon"></i>
+          <h5 class="card-title">Frontend Development</h5>
+          <p class="card-text">Building responsive, interactive websites using HTML, CSS, JavaScript, React and modern frameworks.</p>
+        </div>
+      </div>
+
+      <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem; background-color: #000; color: white;"
+        data-aos="fade-up" data-aos-delay="200">
+        <div class="card-body">
+          <i class="fa-solid fa-server ser-icon"></i>
+          <h5 class="card-title">Backend Development</h5>
+          <p class="card-text">Creating robust server-side applications with Node.js, PHP, databases and API integrations.</p>
+        </div>
+      </div>
+
+      <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem; background-color: #000; color: white;"
+        data-aos="fade-up" data-aos-delay="300">
+        <div class="card-body">
+          <i class="fa-solid fa-palette ser-icon"></i>
+          <h5 class="card-title">UI-UX Design</h5>
+          <p class="card-text">Designing intuitive user interfaces and seamless experiences using Figma and design thinking principles.</p>
+        </div>
+      </div>
+
+      <div class="card col-12 col-sm-6 col-md-4 col-lg-3" style="width: 18rem; background-color: #000; color: white;"
+        data-aos="fade-up" data-aos-delay="400">
+        <div class="card-body">
+          <i class="fa-solid fa-pen-nib ser-icon"></i>
+          <h5 class="card-title">Graphic Design</h5>
+          <p class="card-text">Creating stunning visual content including logos, banners, social media graphics and brand identity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT US -->
+<div id="about">
+  <div class="head-section" data-aos="fade-up">
+    <h1>About Me</h1>
+    <p>Get to know more about my journey, skills and what drives me as a developer and designer.</p>
+  </div>
+
+  <div class="about-main">
+    <div class="left-about" data-aos="fade-right" data-aos-duration="1500">
+      <div class="img-div">
+        <img id="img1-about"
+          src="https://z-cdn-media.chatglm.cn/files/1ba819de-11a2-4585-a7e3-826792a1fcbd.jpeg?auth_key=1875751868-ac3d76a87617498eb59971764d47c693-0-742547223fd0e0b5c8963488708947af"
+          alt="About">
+        <img id="img2-about"
+          src="https://z-cdn-media.chatglm.cn/files/1ba819de-11a2-4585-a7e3-826792a1fcbd.jpeg?auth_key=1875751868-ac3d76a87617498eb59971764d47c693-0-742547223fd0e0b5c8963488708947af"
+          alt="About">
+      </div>
+      <div class="img-div">
+        <img id="img3-about"
+          src="https://z-cdn-media.chatglm.cn/files/1ba819de-11a2-4585-a7e3-826792a1fcbd.jpeg?auth_key=1875751868-ac3d76a87617498eb59971764d47c693-0-742547223fd0e0b5c8963488708947af"
+          alt="About">
+        <img id="img4-about"
+          src="https://z-cdn-media.chatglm.cn/files/1ba819de-11a2-4585-a7e3-826792a1fcbd.jpeg?auth_key=1875751868-ac3d76a87617498eb59971764d47c693-0-742547223fd0e0b5c8963488708947af"
+          alt="About">
+      </div>
+    </div>
+
+   <div class="right-about" data-aos="fade-left" data-aos-duration="1500">
+  <h1>Who Am I?</h1>
+  <p> I'm Ankita Sanjay, the developer behind SJ Tech Studio, a modern web development brand focused on building clean, scalable and user-friendly digital solutions. I'm, a dedicated Web Developer and UI-UX Designer based in Karachi, currently pursuing my education in Software Engineering and Business & Information Technology while working as a School Administrator at Karachi High School.</p>
+  <p>With strong skills in web design, graphic design and frontend development, I bring creativity and technical expertise to every project. I believe in clean code, thoughtful design and continuous learning.</p>
+  <ul>
+    <li>Web Design & Development</li>
+    <li>UI-UX Design & Prototyping</li>
+    <li>Graphic Design & Branding</li>
+    <li>HTML, CSS, JavaScript, Bootstrap</li>
+  </ul>
+
+  <!-- Hidden content FIRST, button AFTER -->
+  <div class="about-extra" id="aboutExtra">
+    <div class="about-edu" data-aos="fade-up">
+      <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+      <div class="edu-cards">
+        <div class="edu-card">
+          <div class="edu-card-icon edu-icon-edu">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="edu-card-info">
+            <h4>DISM- Diploma in Information Systems Management</h4>
+            <p>Aptech Garden, Karachi — Programming, web development, databases, and software engineering principles.</p>
+            <span class="edu-status">Ongoing</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-card-icon edu-icon-edu">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <div class="edu-card-info">
+            <h4>BBIT - Bachelors of Business & Information Technology</h4>
+            <p>Virtual University of Pakistan — Business management, information systems, and technology integration.</p>
+            <span class="edu-status">Ongoing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-exp" data-aos="fade-up">
+      <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+      <div class="edu-cards">
+        <div class="edu-card">
+          <div class="edu-card-icon edu-icon-work">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="edu-card-info">
+            <h4>School Administrator</h4>
+            <p>Karachi High School — Managing daily administrative operations, coordination, and school management tasks.</p>
+            <span class="edu-status edu-working">2025 — Present</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="about-btn" onclick="toggleReadMore()">Read More</button>
+</div>
+  </div>
+</div>
+  <!-- CONTACT ME (LinkedIn Style) -->
+  <div class="contact-main" id="contact">
+    <div class="head-section" data-aos="fade-up">
+      <h1>Contact Me</h1>
+      <p>Let's connect! Find me on these platforms or reach out directly — I'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-cards-wrapper">
+      <div class="contact-cards">
+
+        <a href="https://www.linkedin.com/in/ankita-sanjay-jadhaw-4828a420a/" target="_blank" class="contact-card linkedin" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-card-icon">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <p class="contact-handle">linkedin.com/in/Ankita-Sanjay</p>
+          <span class="contact-action">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Connect
+          </span>
+        </a>
+
+        <a href="https://www.instagram.com/sjtechstudios/" target="_blank" class="contact-card instagram" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-card-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <h3>Instagram</h3>
+          <p class="contact-handle">SJ Tech Studio</p>
+          <span class="contact-action">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Follow
+          </span>
+        </a>
+
+        <a href="https://www.facebook.com/SJTechStudio/" target="_blank" class="contact-card facebook" data-aos="fade-up" data-aos-delay="300">
+          <div class="contact-card-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <h3>Facebook</h3>
+          <p class="contact-handle">SJ Tech Studio</p>
+          <span class="contact-action">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Follow
+          </span>
+        </a>
+
+        <a href="mailto:sjtechstudios@gmail.com" class="contact-card email" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-card-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h3>Email</h3>
+          <p class="contact-handle">sjtechstudios@gmail.com</p>
+          <span class="contact-action">
+            <i class="fa-solid fa-paper-plane"></i> Send Email
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer bg-dark mt-0">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-light">Home</a></li>
+              <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-light">About</a></li>
+              <li class="nav-item mb-2"><a href="#projects" class="nav-link p-0 text-light">Projects</a></li>
+              <li class="nav-item mb-2"><a href="#services" class="nav-link p-0 text-light">Services</a></li>
+              <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-light">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Frontend Dev</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Backend Dev</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">UI-UX Design</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Social</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">LinkedIn</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5 offset-md-1 mb-3 text-light">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from me.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-light">
+          <p>© 2025 SJ Tech Studio | Ankita Sanjay. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+    integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+ <script src="script.js"></script>
+</body>
+</html>

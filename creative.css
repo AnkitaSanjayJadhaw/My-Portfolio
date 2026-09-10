@@ -1,0 +1,738 @@
+/* =========================================================
+   SJ TECH STUDIO
+   CREATIVE PROJECTS
+   DASHBOARD-MATCHING DESIGN
+========================================================= */
+
+:root {
+    --primary: #2563eb;
+    --secondary: #8b5cf6;
+    --accent: #06b6d4;
+    --gold: rgb(223, 202, 131);
+
+    --bg-dark: #020617;
+    --bg-main: #0f172a;
+
+    --text-main: #f8fafc;
+    --text-light: #cbd5e1;
+    --text-muted: #94a3b8;
+
+    --glass: rgba(255,255,255,0.05);
+    --border: rgba(255,255,255,0.08);
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #f8fafc;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.nav-main {
+    background: rgba(0,0,0,0.6);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.nav-links li a.active {
+    color: var(--accent);
+
+    background: rgba(255,255,255,0.05);
+}
+
+
+/* =========================================================
+   CREATIVE HERO
+========================================================= */
+
+.creative-hero {
+    min-height: 430px;
+
+    padding: 100px 7%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(139,92,246,0.12),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #020617
+        );
+}
+
+
+/* decorative glow */
+
+.creative-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(37,99,235,0.08);
+
+    filter: blur(70px);
+
+    left: 10%;
+    top: 25%;
+}
+
+
+.creative-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.creative-hero > span {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: var(--accent);
+
+    font-weight: 600;
+}
+
+
+.creative-hero h1 {
+    font-size: clamp(38px, 6vw, 58px);
+
+    line-height: 1.2;
+
+    margin: 15px 0;
+
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.creative-hero p {
+    max-width: 650px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   CREATIVE SECTION
+========================================================= */
+
+.creative-section {
+    padding: 70px 7% 100px;
+}
+
+
+/* =========================================================
+   FILTER
+========================================================= */
+
+.creative-filter {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-bottom: 50px;
+}
+
+
+.creative-filter-btn {
+    border: 1px solid rgba(255,255,255,0.12);
+
+    background: rgba(255,255,255,0.04);
+
+    color: #cbd5e1;
+
+    padding: 9px 18px;
+
+    border-radius: 10px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.creative-filter-btn:hover,
+.creative-filter-btn.active {
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color: white;
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 8px 20px rgba(37,99,235,0.18);
+}
+
+
+/* =========================================================
+   CREATIVE GRID
+========================================================= */
+
+.creative-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    columns: 3 300px;
+
+    column-gap: 25px;
+}
+
+
+/* =========================================================
+   CREATIVE CARD
+========================================================= */
+
+.creative-card {
+    display: inline-block;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 16px;
+
+    break-inside: avoid;
+
+    overflow: hidden;
+
+    color: white;
+
+    transition: 0.4s;
+}
+
+
+.creative-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 20px 45px rgba(37,99,235,0.15);
+}
+
+
+/* =========================================================
+   CREATIVE MEDIA
+========================================================= */
+
+.creative-media {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #020617
+        );
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+
+.creative-media img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    transition: 0.5s;
+}
+
+
+.creative-card:hover .creative-media img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.creative-badge {
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color: white;
+
+    padding: 7px 11px;
+
+    border-radius: 8px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.5px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.25);
+}
+
+
+/* =========================================================
+   VIDEO
+========================================================= */
+
+.video-media {
+    background: #020617;
+}
+
+
+.video-media video {
+    width: 100%;
+
+    display: block;
+
+    max-height: 450px;
+
+    border-radius: 0;
+}
+
+
+/* =========================================================
+   CREATIVE CONTENT
+========================================================= */
+
+.creative-content {
+    padding: 25px;
+}
+
+
+.creative-content h2 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+
+.creative-content p {
+    font-size: 12px;
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+.creative-content a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.creative-content a i {
+    color: var(--accent);
+
+    transition: 0.3s;
+}
+
+
+.creative-content a:hover {
+    color: var(--accent);
+}
+
+
+.creative-content a:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   CREATIVE CTA
+========================================================= */
+
+.creative-cta {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(139,92,246,0.10),
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #020617
+        );
+
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+
+.creative-cta h2 {
+    font-size: 40px;
+
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.creative-cta p {
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    margin: 15px auto 30px;
+}
+
+
+.creative-cta a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color: white;
+
+    padding: 12px 23px;
+
+    border-radius: 12px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.creative-cta a:hover {
+    background: var(--primary);
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    background: rgba(0,0,0,0.6);
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+
+.footer-bottom {
+    padding: 25px 20px;
+
+    text-align: center;
+}
+
+
+.footer-bottom p {
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .creative-grid {
+        columns: 2 250px;
+    }
+
+    .creative-hero {
+        min-height: 390px;
+    }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .creative-hero {
+        min-height: 360px;
+
+        padding: 80px 6%;
+    }
+
+    .creative-hero h1 {
+        font-size: 40px;
+    }
+
+    .creative-section {
+        padding: 60px 6% 80px;
+    }
+
+    .creative-cta {
+        padding: 70px 6%;
+    }
+
+    .creative-cta h2 {
+        font-size: 32px;
+    }
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .creative-hero {
+        min-height: 340px;
+
+        padding: 70px 6%;
+    }
+
+    .creative-hero h1 {
+        font-size: 34px;
+    }
+
+    .creative-hero p {
+        font-size: 13px;
+    }
+
+    .creative-section {
+        padding: 55px 6% 70px;
+    }
+
+    .creative-grid {
+        columns: 1;
+    }
+
+    .creative-filter {
+        margin-bottom: 35px;
+    }
+
+    .creative-filter-btn {
+        padding: 8px 13px;
+
+        font-size: 10px;
+    }
+
+    .creative-content {
+        padding: 22px;
+    }
+
+    .creative-cta {
+        padding: 60px 6%;
+    }
+
+    .creative-cta h2 {
+        font-size: 29px;
+    }
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .creative-hero {
+        min-height: 310px;
+
+        padding: 60px 20px;
+    }
+
+    .creative-hero > span {
+        font-size: 9px;
+
+        letter-spacing: 3px;
+    }
+
+    .creative-hero h1 {
+        font-size: 27px;
+
+        margin: 12px 0;
+    }
+
+    .creative-hero p {
+        font-size: 12px;
+    }
+
+    .creative-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .creative-content {
+        padding: 20px;
+    }
+
+    .creative-content h2 {
+        font-size: 19px;
+    }
+
+    .creative-content p {
+        font-size: 11px;
+    }
+
+    .creative-cta h2 {
+        font-size: 25px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   375px
+========================================================= */
+
+@media (max-width: 375px) {
+
+    .creative-hero h1 {
+        font-size: 25px;
+    }
+
+    .creative-hero p {
+        font-size: 11px;
+    }
+
+    .creative-filter-btn {
+        font-size: 9px;
+
+        padding: 7px 10px;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .creative-hero h1 {
+        font-size: 34px;
+    }
+
+    .creative-content {
+        padding: 20px;
+    }
+
+    .creative-cta h2 {
+        font-size: 32px;
+    }
+
+}
